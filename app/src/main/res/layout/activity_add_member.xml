@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddMemberActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        app:title="" />
+    <FrameLayout
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+
+        android:layout_marginBottom="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMember"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:layout_gravity="start"
+            tools:listitem="@layout/layout_create" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFriend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="95dp"
+            tools:listitem="@layout/layout_conversation" />
+    </FrameLayout>
+</LinearLayout>

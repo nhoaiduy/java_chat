@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    tools:context=".MessageActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/TextAppearance.AppCompat.Menu">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_profile_mess"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:id="@+id/tv_username_mess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_mess"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/pathRelative"
+        android:layout_below="@id/bar_layout" />
+
+    <RelativeLayout
+        android:id="@+id/pathRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imgChoose"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true">
+
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/btn_ivideo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/ic_baseline_image_24" />
+
+        <EditText
+            android:id="@+id/edt_send"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_send"
+            android:layout_toRightOf="@+id/btn_ivideo"
+            android:background="@color/white"
+            android:hint="Nhập tin nhắn..." />
+
+        <ImageButton
+            android:id="@+id/btn_send"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/ic_baseline_send_24" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

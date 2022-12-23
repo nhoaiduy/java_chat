@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    tools:context=".Fragment.GroupInfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/groupImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/groupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:layout_margin="8dp"
+        android:text="Group Name"/>
+
+    <TextView
+        android:id="@+id/members"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xem thành viên nhóm"
+        android:padding="16dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/mediaList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xem ảnh"
+        android:padding="16dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/messageSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tìm kiếm tin nhắn"
+        android:padding="16dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/leaveGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rời nhóm"
+        android:padding="16dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/groupDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xóa nhóm"
+        android:padding="16dp"
+        android:textSize="20sp"/>
+
+</LinearLayout>

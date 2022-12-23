@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    tools:context=".Fragment.ConversationInfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/conImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/conName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:layout_margin="8dp"
+        android:text="Username"/>
+
+    <TextView
+        android:id="@+id/user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xem thông tin cá nhân"
+        android:padding="16dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/mediaList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xem ảnh"
+        android:padding="16dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/messageSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tìm kiếm tin nhắn"
+        android:padding="16dp"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>

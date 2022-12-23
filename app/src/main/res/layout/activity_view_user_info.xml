@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewUserInfoActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        app:title="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_gravity="top"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_avt"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ava"/>
+        <TextView
+            android:id="@+id/tv_fullname"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_outline_account_circle_36"
+            android:drawablePadding="8dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_dob"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_outline_date_range_36"
+            android:drawablePadding="8dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_gender"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_outline_screen_rotation_alt_36"
+            android:drawablePadding="8dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_mail"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_outline_mail_36"
+            android:drawablePadding="8dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_phone"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_outline_phone_36"
+            android:drawablePadding="8dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

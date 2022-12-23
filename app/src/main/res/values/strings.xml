@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Chat</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Conversation">Conversation</string>
+    <string name="Friend_Requests">Friend Requests</string>
+    <string name="channel_name">Channel A</string>
+    <string name="channel_description">Channel A</string>
+    <string name="status">Status</string>
+    <string name="profile">Profile</string>
+    <string name="action_settings">Settings</string>
+</resources>
